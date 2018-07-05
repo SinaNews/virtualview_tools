@@ -77,19 +77,21 @@ public class TMNImageParser extends ImageBaseParser {
                     Log.e(TAG, "parse maskColor value invalidate:" + value);
                     ret = CONVERT_RESULT_ERROR;
                 }
-            } else if (key == StringBase.STR_ID_blurRadius) {
-                if (null != value && !TextUtils.isEmpty(value.mStrValue)) {
-                    if (!parseInteger(value)) {
-                        ret = CONVERT_RESULT_ERROR;
-                        Log.e(TAG, "blurRadius value error:" + value);
-//                    } else {
-//                        Log.d(TAG, "parse blurRadius:" + value);
-                    }
-                } else {
-                    Log.e(TAG, "parse blurRadius value invalidate:" + value);
-                    ret = CONVERT_RESULT_ERROR;
-                }
-            } else if (key == StringBase.STR_ID_filterWhiteBg) {
+            }
+//            else if (key == StringBase.STR_ID_blurRadius) {
+//                if (null != value && !TextUtils.isEmpty(value.mStrValue)) {
+//                    if (!parseInteger(value)) {
+//                        ret = CONVERT_RESULT_ERROR;
+//                        Log.e(TAG, "blurRadius value error:" + value);
+////                    } else {
+////                        Log.d(TAG, "parse blurRadius:" + value);
+//                    }
+//                } else {
+//                    Log.e(TAG, "parse blurRadius value invalidate:" + value);
+//                    ret = CONVERT_RESULT_ERROR;
+//                }
+//            }
+            else if (key == StringBase.STR_ID_filterWhiteBg) {
                 if ("TRUE".equalsIgnoreCase(value.mStrValue)) {
                     value.setIntValue(1);
                 } else {

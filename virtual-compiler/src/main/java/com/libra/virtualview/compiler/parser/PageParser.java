@@ -83,11 +83,11 @@ public class PageParser extends ViewBaseParser {
                     }
                     break;
 
-                case StringBase.STR_ID_layoutOrientation:
-                    if (!parseLayoutOrientation(value)) {
-                        ret = CONVERT_RESULT_ERROR;
-                    }
-                    break;
+//                case StringBase.STR_ID_layoutOrientation:
+//                    if (!parseLayoutOrientation(value)) {
+//                        ret = CONVERT_RESULT_ERROR;
+//                    }
+//                    break;
                 default:
                     ret = ViewBaseParser.CONVERT_RESULT_FAILED;
                     break;
