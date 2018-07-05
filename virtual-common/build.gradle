@@ -26,6 +26,14 @@ group 'com.alibaba.android'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
+
+def MAVEN_RELEASE_PATH = 'http://10.13.216.29:8081/nexus/content/repositories/releases/'
+def MAVEN_SNAPSHOT_PATH = 'http://10.13.216.29:8081/nexus/content/repositories/snapshots/'
+def ARTIFACT_ID = 'snvirtual-common'
+def VERSION_NAME = '1.0.1'
+def GROUP_ID = 'com.alibaba.android'
 
 ext {
     bintrayRepo = 'Tangram'
@@ -67,14 +75,18 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-File deployConfig = rootProject.file('jcenterDeploy.gradle')
-println deployConfig
-if (deployConfig.exists()) {
-    apply from: rootProject.file('jcenterDeploy.gradle')
-}
-
-File installConfig = rootProject.file('jcenterInstall.gradle')
-println installConfig
-if (installConfig.exists()) {
-    apply from: rootProject.file('jcenterInstall.gradle')
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: MAVEN_RELEASE_PATH) {
+                authentication(userName: "admin", password: "admin123")
+            }
+            pom.project {
+                groupId GROUP_ID
+                artifactId ARTIFACT_ID
+                version VERSION_NAME
+                packaging 'jar'
+            }
+        }
+    }
 }
