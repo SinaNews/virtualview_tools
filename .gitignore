@@ -18,6 +18,7 @@ compiler-tools/build1/
 compiler-tools/template/build/
 compiler-tools/template/*.txt
 compiler-tools/compiler-tools/
+virtual-compiler/build/
 local.properties
 
 #jcenterDeploy.gradle
