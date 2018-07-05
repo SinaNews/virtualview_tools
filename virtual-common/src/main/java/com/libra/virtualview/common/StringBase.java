@@ -47,7 +47,7 @@ public class StringBase {
             "siblings", "module", "RatioLayout", "layoutRatio", "layoutDirection", "VH2Layout",
             "onAutoRefresh", "initValue", "uuid", "onBeforeDataLoad",
             "onAfterDataLoad", "Page", "onPageFlip", "autoSwitch", "canSlide", "stayTime",
-            "animatorTime", "autoSwitchTime", "animatorStyle", "layoutOrientation", "Grid",
+            "animatorTime", "autoSwitchTime", "animatorStyle", "Grid",
             "paintWidth",
             "itemHorizontalMargin", "itemVerticalMargin", "NLine", "visibility", "mode",
             "supportSticky", "VGraph", "diameterX", "diameterY", "itemWidth",
@@ -59,10 +59,10 @@ public class StringBase {
             "autoRefreshThreshold", "dataMode", "waterfall",
             "supportHTMLStyle", "lineSpaceMultiplier", "lineSpaceExtra", "borderWidth",
             "borderColor", "maxLines", "dashEffect", "lineSpace", "firstSpace", "lastSpace",
-            "maskColor", "blurRadius", "filterWhiteBg", "ratio", "disablePlaceHolder",
+            "maskColor", "filterWhiteBg", "ratio", "disablePlaceHolder",
             "disableCache", "fixBy", "alpha", "ck", "borderRadius",
             "borderTopLeftRadius", "borderTopRightRadius", "borderBottomLeftRadius",
-            "borderBottomRightRadius", "tag", "lineHeight", "padding", "layoutMargin"
+            "borderBottomRightRadius", "lineHeight"
     };
 
     public static final int[] SYS_KEYS_INDEX = {1302701180, -1822277072, 1310765783, 74637979,

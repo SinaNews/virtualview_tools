@@ -32,7 +32,7 @@ apply plugin: 'maven'
 def MAVEN_RELEASE_PATH = 'http://10.13.216.29:8081/nexus/content/repositories/releases/'
 def MAVEN_SNAPSHOT_PATH = 'http://10.13.216.29:8081/nexus/content/repositories/snapshots/'
 def ARTIFACT_ID = 'snvirtual-common'
-def VERSION_NAME = '1.0.1'
+def VERSION_NAME = '1.0.2'
 def GROUP_ID = 'com.alibaba.android'
 
 ext {
